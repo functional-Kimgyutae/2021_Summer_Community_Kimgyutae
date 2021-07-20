@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <title></title>
+</head>
+<body>
+    <header class="flex-column-around">
+        <div class="phoName"> <!-- 사용자 이미지, 확과, 이름 표시 -->
+            <div class="profile">
+                <img src="/image/human.png" alt=""> <!-- 사용자 이미지-->
+            </div>
+    
+            <div class="userPri flex-column-center"> <!-- 사용자 학과, 이름 -->
+                <b>소프트웨어개발과</b>
+                <b>김규태</b>
+            </div>
+        </div><!-- end phoName -->
+    
+        <nav> <!-- 메뉴 -->
+            <ul>
+                <li><a href="#"><b>메인페이지</b></a></li>
+                <li><a href="#"><b>학교 행사</b></a></li>
+                <li><a href="#"><b>공지 사항</b></a></li>
+                <li><a href="#"><b>급식일정표</b></a></li>
+                <li><a href="#"><b>게시판</b></a></li>
+                <li><a href="#"><b>반 페이지</b></a></li>
+                <li><a href="#"><b>학사 일정</b></a></li>
+                <li><a href="#"><b>내 계정</b></a></li>
+            </ul>
+        </nav> <!-- end nav -->
+    
+        <div class="h-footer flex-column-center"> <!-- 로그아웃, 푸터 -->
+            <a href="#">로그아웃</a> <br>
+            <p>COPYRIGHT ⓒ 양영디지털고등학교</p>
+            <p>ALL RIGHTS RESERVED</p>
+        </div> <!-- end h-footer -->
+    </header>
+    <section id="admin_page">
+        <div>
+            <h2>관리자 페이지</h2>
+            <nav>
+                <label for="">계정</label>
+                <label for="">신고 확인</label>
+            </nav>
+            <div>
+                <div id="search"><input type="text" placeholder="ㅁㄴㅇㄹ"><button>asfd</button></div>
+                <table id="user_table">
+                    <thead>
+                        <tr>
+                            <th>아이디</th>
+                            <th>이름</th>
+                            <th>학번</th>
+                            <th>권한</th>
+                            <th>글 권한</th>
+                            <th>댓글 권한</th>
+                            <th>설정</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>stop</td>
+                            <td>김규태</td>
+                            <td>학생</td>
+                            <td>20607</td>
+                            <td>가능</td>
+                            <td>가능</td>
+                            <td>설정</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="report">
+                    <thead>
+                        <tr>
+                            <th>종류</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>문의중</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>댓글</td>
+                            <td><a href="#">주소연결</a></td>
+                            <td>작성자</td>
+                            <td>신고확인</td>
+                        </tr>
+                        <tr>
+                            <td>게시글</td>
+                            <td><a href="#">주소연결</a></td>
+                            <td>작성자</td>
+                            <td>신고중</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+</html>
