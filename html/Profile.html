@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,24 @@
     <link rel="stylesheet" href="../css/profile.css">
     <title></title>
 </head>
+
 <body>
     <header class="flex-column-around">
-        <div class="phoName"> <!-- 사용자 이미지, 확과, 이름 표시 -->
+        <div class="phoName">
+            <!-- 사용자 이미지, 확과, 이름 표시 -->
             <div class="profile">
                 <img src="/image/human.png" alt=""> <!-- 사용자 이미지-->
             </div>
-    
-            <div class="userPri flex-column-center"> <!-- 사용자 학과, 이름 -->
+
+            <div class="userPri flex-column-center">
+                <!-- 사용자 학과, 이름 -->
                 <b>소프트웨어개발과</b>
                 <b>김규태</b>
             </div>
         </div><!-- end phoName -->
-    
-        <nav> <!-- 메뉴 -->
+
+        <nav>
+            <!-- 메뉴 -->
             <ul>
                 <li><a href="#"><b>메인페이지</b></a></li>
                 <li><a href="#"><b>학교 행사</b></a></li>
@@ -33,8 +38,9 @@
                 <li><a href="#"><b>내 계정</b></a></li>
             </ul>
         </nav> <!-- end nav -->
-    
-        <div class="h-footer flex-column-center"> <!-- 로그아웃, 푸터 -->
+
+        <div class="h-footer flex-column-center">
+            <!-- 로그아웃, 푸터 -->
             <a href="#">로그아웃</a> <br>
             <p>COPYRIGHT ⓒ 양영디지털고등학교</p>
             <p>ALL RIGHTS RESERVED</p>
@@ -42,111 +48,125 @@
     </header>
     <section class="container">
         <div id="profile_page">
-            <table> 
+            <table id="profile_table">
                 <!-- 프로필 확인하기 -->
+                <thead>
+                    <tr>
+                        <th class="table_one"></th>
+                        <th class="table_two"></th>
+                        <th class="table_thr"></th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr>
-                        <td>내 프로필</td>
+                        <td colspan="3">
+                            <h2>내 프로필</h2>
+                        </td>
                     </tr>
                     <tr>
-                        <td><img src="" alt=""></td>
-                        <td>사진 변경하기</td>
+                        <td colspan="2"><img src="" alt="" class="profile_img"></td>
+                        <td>사</td>
+                    </tr>
+                    <tr>
+                        <td>아이디 : </td>
+                        <td>Normal'_'GT</td>
+                        <td><a href="#">아</a></td>
                     </tr>
                     <tr>
                         <td>이름 :</td>
                         <td>김규태</td>
-                        <td><a href="#">수정하기</a></td>
+                        <td><a href="#">수</a></td>
                     </tr>
                     <tr>
-                        <td>학과</td>
+                        <td>학과 :</td>
                         <td>소프트웨어과</td>
                     </tr>
                     <tr>
                         <td>학번 :</td>
                         <td>20607</td>
                     </tr>
-                    <tr>
-                        <td>아이디 : </td>
-                        <td>Normal'_'GT</td>
-                        <td><a href="#">아이디 변경</a></td>
-                    </tr>
                 </tbody>
             </table>
             <div>
-                <nav>
-                    <label for="">내 게시글</label>
-                    <label for="">내 문의사항</label>
-                </nav>
-                <div>
-                    <table id="board-table">
+                <h2 class="h2">내 게시글</h2>
+                <div id="my_board">
+                    <table >
                         <thead>
                             <tr>
-                                <th>번호</th>
-                                <th>제목</th>
-                                <th>작성자</th>
-                                <th>작성일</th>
-                                <th>조회수</th>
-                                <th>추천수</th>
+                                <th style="width: 12%;">번호</th>
+                                <th style="width: 40%;">제목</th>
+                                <th style="width: 12%;">작성자</th>
+                                <th style="width: 12%;">작성일</th>
+                                <th style="width: 12%;">조회수</th>
+                                <th style="width: 12%;">추천수</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>000</td>
+                                <td class="text_center">000</td>
                                 <td>titlaaaaaaaaaaaaaaaaaaaaae</td>
-                                <td>user</td>
-                                <td>0000/00/00</td>
-                                <td>00</td>
-                                <td>00</td>
-                            </tr>
-        
-                            <tr>
-                                <td>000</td>
-                                <td>titlaaaaaaaaaaaaaaaaaaaaae</td>
-                                <td>user</td>
-                                <td>0000/00/00</td>
-                                <td>00</td>
-                                <td>00</td>
-                            </tr>
-        
-                            <tr>
-                                <td>000</td>
-                                <td>titlaaaaaaaaaaaaaaaaaaaaae</td>
-                                <td>user</td>
-                                <td>0000/00/00</td>
-                                <td>00</td>
-                                <td>00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table id="question">
-                        <thead>
-                            <tr>
-                                <th>번호</th>
-                                <th>제목</th>
-                                <th>작성자</th>
-                                <th>문의중</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>000</td>
-                                <td>titlaaaaaaaaaaaaaaaaaaaaae</td>
-                                <td>user</td>
-                                <td>답변완료</td>
+                                <td class="text_center">user</td>
+                                <td class="text_center">0000/00/00</td>
+                                <td class="text_center">00</td>
+                                <td class="text_center">00</td>
                             </tr>
                             <tr>
-                                <td>000</td>
+                                <td class="text_center">000</td>
                                 <td>titlaaaaaaaaaaaaaaaaaaaaae</td>
-                                <td>user</td>
-                                <td>문의중</td>
+                                <td class="text_center">user</td>
+                                <td class="text_center">0000/00/00</td>
+                                <td class="text_center">00</td>
+                                <td class="text_center">00</td>
+                            </tr>
+                            <tr>
+                                <td class="text_center">000</td>
+                                <td>titlaaaaaaaaaaaaaaaaaaaaae</td>
+                                <td class="text_center">user</td>
+                                <td class="text_center">0000/00/00</td>
+                                <td class="text_center">00</td>
+                                <td class="text_center">00</td>
+                            </tr>
+                            <tr>
+                                <td class="text_center">000</td>
+                                <td>titlaaaaaaaaaaaaaaaaaaaaae</td>
+                                <td class="text_center">user</td>
+                                <td class="text_center">0000/00/00</td>
+                                <td class="text_center">00</td>
+                                <td class="text_center">00</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-    
+                <h2 class="h2">내 문의사항</h2>
+                <div id="question">
+                    <table >
+                        <thead>
+                            <tr>
+                                <th style="width: 12%;">번호</th>
+                                <th style="width: 48%;">제목</th>
+                                <th style="width: 20%;">작성자</th>
+                                <th style="width: 20%;">문의중</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text_center">000</td>
+                                <td >titlaaaaaaaaaaaaaaaaaaaaae</td>
+                                <td class="text_center">user</td>
+                                <td class="text_center">답변완료</td>
+                            </tr>
+                            <tr>
+                                <td class="text_center">000</td>
+                                <td >titlaaaaaaaaaaaaaaaaaaaaae</td>
+                                <td class="text_center">user</td>
+                                <td class="text_center">문의중</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-
     </section>
 </body>
+
 </html>
