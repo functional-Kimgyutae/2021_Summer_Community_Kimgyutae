@@ -70,7 +70,7 @@ header .userPri{
 }
 
 header .userPri b {
-    font-size: 1vmax;
+    font-size: 2.3vmin;
     line-height: 1.5rem;
     font-weight: bold;
 }
@@ -82,20 +82,25 @@ header .userPri b {
 
 header nav{
     width: 18vmin;
+    max-height: 400px;
+    height: 50%;
 }
+
 
 header nav ul{
     width: 100%;
-    margin-top: 6vmin;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 header nav ul li{
     width: 100%;
-    margin-bottom: 1.5vmax;
 }
 
 header nav li b{
-    font-size: 1vmax;
+    font-size: 2vmin;
 }
 
 /* nav end */
@@ -104,7 +109,7 @@ header nav li b{
 
 header .h-footer{
     width: 34vmin;
-    font-size: 0.9vmax;
+    font-size: 0.9vmin;
 }
 
 /* h-footer end */
