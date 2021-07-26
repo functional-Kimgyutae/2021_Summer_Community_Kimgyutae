@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/admin.css">
     <title></title>
 </head>
 <body>
@@ -41,12 +43,24 @@
     <section id="admin_page">
         <div>
             <h2>관리자 페이지</h2>
-            <nav>
-                <label for="">계정</label>
-                <label for="">신고 확인</label>
-            </nav>
             <div>
-                <div id="search"><input type="text" placeholder="ㅁㄴㅇㄹ"><button>asfd</button></div>
+                <h2>계정</h2>
+                <form action="">
+                    검색 :
+                    <select name="" id="">
+                        <option value="">소프트웨어</option>
+                        <option value="">전자제어</option>
+                        <option value="">정보통신</option>
+                        <option value="">바이오화학</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">1학년</option>
+                        <option value="">2학년</option>
+                        <option value="">3학년</option>
+                    </select>
+                    <input type="number" size="1">
+                    <button>검색</button>
+                </form>
                 <table id="user_table">
                     <thead>
                         <tr>
@@ -71,12 +85,14 @@
                         </tr>
                     </tbody>
                 </table>
+                <h2>신고</h2>
                 <table id="report">
                     <thead>
                         <tr>
                             <th>종류</th>
                             <th>제목</th>
                             <th>작성자</th>
+                            <th>신고자</th>
                             <th>문의중</th>
                         </tr>
                     </thead>
@@ -85,12 +101,14 @@
                             <td>댓글</td>
                             <td><a href="#">주소연결</a></td>
                             <td>작성자</td>
+                            <td>신고자</td>
                             <td>신고확인</td>
                         </tr>
                         <tr>
                             <td>게시글</td>
                             <td><a href="#">주소연결</a></td>
                             <td>작성자</td>
+                            <td>신고자</td>
                             <td>신고중</td>
                         </tr>
                     </tbody>
